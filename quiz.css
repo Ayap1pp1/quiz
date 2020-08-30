@@ -1,0 +1,36 @@
+.textAlignCenter{
+    text-align: center;
+}
+.titleQuestion{
+    font-size: 30px;
+}
+.padding30{
+    padding: 30px;
+}
+.quiz{
+    font-weight: bold;
+    font-size: 50px; 
+}
+
+.questions{
+    font-size: 20px;
+    padding:20px;
+}
+.popUp{
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+}
+.result{
+    font-size: 40px;
+    font-weight: bold;
+    color: Blue;
+}
+
+.greenText{
+    color:green;
+}
+.redText{
+    color:red;
+}

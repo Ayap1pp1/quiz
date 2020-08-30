@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="icon" href="faq.png">
+</head>
+
+<body>
+    <div class="container-fluid ">
+        <div id="pages">
+            <div id="page-init">
+                <div class="textAlignCenter padding30 quiz">QUIZ</div>
+                <div class="textAlignCenter padding30 titleQuestion">Hur mycket kan ni om världen?</div>
+                <div class="textAlignCenter padding30">
+                    <button onclick="showPage(0);" class="btn btn-primary btn btn-primary btn-lg">DELTA!</button>
+                </div>
+            </div>
+            <div id="page-end" class="questions" style="display: none"> <span style="font-size: 30px">Result</span>
+                <div>
+                    <div id="result" class="result"></div>
+                </div>
+                <div>
+                    <button onclick="showSolution()" class="btn btn-primary">FACIT</button>
+                    <button onclick="showPage('init')" class="btn btn-warning">HOME</button>
+                </div>
+                <div id="solution"></div>
+            </div>
+
+        </div>
+
+        <!-- The Modal -->
+        <div id="errorModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <p class="popUp">Vänligen välja ett svar från A - D.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="quiz.js"></script>
+<script src="modal.js"></script>
+
+</html>
